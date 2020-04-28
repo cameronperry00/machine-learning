@@ -1,12 +1,12 @@
 /* =============
-    Footer
+    Section-2
 ============= */
-footer{
+#section-2{
     display: grid;
     grid-template-columns: 10px auto 10px;
-    grid-template-areas: ". footer .";
+    grid-template-areas: ". section-2 .";
 
     >div{
-        grid-area: footer;
+        grid-area: section-2;
     }
 }
