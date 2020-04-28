@@ -4,7 +4,7 @@
 	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
-		"uuidString": "398933D7-6B70-4952-8C5D-8C457D4F53CA"
+		"uuidString": "C17D4F77-72A7-46BD-8F8B-CC1892D4BFA6"
 		}
 	],
 "creatorBuild": "32001",
@@ -188,8 +188,8 @@
 		"ft": 2048,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/dev/index.html",
-		"oF": 0
+		"oAP": "/deploy/index.html",
+		"oF": 2
 		},
 	"/dev/js/scripts.js": {
 		"bF": 0,
@@ -332,7 +332,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/section-2.scss": {
+	"/dev/scss/sections/_section-2.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -340,12 +340,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/section-2.css",
+		"oAP": "/dev/scss/sections/_section-2.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"/dev/scss/sections/section-3.scss": {
+	"/dev/scss/sections/_section-3.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -353,7 +353,20 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/dev/scss/sections/section-3.css",
+		"oAP": "/dev/scss/sections/_section-3.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/dev/scss/sections/_section-5.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-5.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -410,25 +423,6 @@
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
 		"oF": 0
-		},
-	"/README.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/README.html",
-		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
 		}
 	},
 "hooks": [
@@ -436,10 +430,10 @@
 "manualImportLinks": {
 	},
 "projectAttributes": {
-	"creationDate": 608770022.47026896,
+	"creationDate": 609802442.21579099,
 	"displayValue": "machine-learning",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "brackets_gray",
+	"iconImageName": "brackets-forest",
 	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
