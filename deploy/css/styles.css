@@ -354,6 +354,34 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed; }
+  header > div {
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-areas: "burger survival" "nav nav"; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-columns: 20% auto;
+        grid-template-areas: "nav survival"; } }
+    header > div #logo-container {
+      grid-area: survival;
+      padding: 10px;
+      text-align: right; }
+      header > div #logo-container a:link,
+      header > div #logo-container a:visited {
+        background-color: #F8C832;
+        border-radius: 23px;
+        color: #000;
+        display: inline-block;
+        font-size: 1.125rem;
+        font-weight: 700;
+        padding: 10px 20px; }
+
 /* =============
     Footer
 ============= */
