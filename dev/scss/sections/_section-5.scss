@@ -6,9 +6,71 @@
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-5 .";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     ul{
         grid-area: section-5;
         display: grid;
         grid-gap: 20px;
+
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: 
+                "gallery-1 gallery-2"
+                "gallery-1 gallery-7"
+                "gallery-3 gallery-6";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: 
+                "gallery-1 gallery-5 gallery-2"
+                "gallery-1 gallery-7 gallery-4"
+                "gallery-6 gallery-3 gallery-4";
+        }
+
+        #gallery-1{
+            @include md{
+                grid-area: gallery-1;
+            }
+        }
+
+        #gallery-2{
+             @include md{
+                grid-area: gallery-2;
+             }
+        }
+
+        #gallery-3{
+             @include md{
+                grid-area: gallery-3;
+             }
+        }
+
+        #gallery-4{
+            @include lg{
+               grid-area: gallery-4;
+            }
+       }
+
+       #gallery-5{
+        @include lg{
+           grid-area: gallery-5;
+        }
+   }
+
+        #gallery-6{
+             @include md{
+                grid-area: gallery-6;
+             }
+        }
+
+        #gallery-7{
+             @include md{
+                grid-area: gallery-7;
+             }
+        }
     }
 }

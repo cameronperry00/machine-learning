@@ -6,7 +6,57 @@
     grid-template-columns: 10px auto 10px;
     grid-template-areas: ". section-2 .";
 
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+
     >div{
         grid-area: section-2;
+
+        #section-2-first{
+            @include md{
+                display: grid;
+                grid-template-columns: 20% auto 20%;
+                grid-template-areas: ". section-2-first .";
+            }
+
+            >div{
+                @include md{
+                    grid-area: section-2-first;
+                }
+            }
+        }
+
+        #section-2-middle{
+            @include lg{
+                display: grid;
+                grid-template-columns: 20% auto 20%;
+                grid-template-areas: ". section-2-middle .";
+            }
+
+            >div{
+                @include lg{
+                    grid-area: section-2-middle;
+                }
+            }
+        }
+
+        #section-2-last{
+            @include md{
+                display: grid;
+                grid-template-columns: 10% auto 10%;
+                grid-template-areas: ". section-2-last .";
+            }
+
+            @include lg{
+                grid-template-columns: 25% auto 25%;
+            }
+
+            >div{
+                @include md{
+                    grid-area: section-2-last;
+                }
+            }
+        }
     }
 }
