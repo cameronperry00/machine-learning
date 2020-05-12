@@ -34,7 +34,41 @@ header {
                 font-weight: 700;
                 padding: 10px 20px;
             }
+
+            a:hover,
+            a:active {
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        #burger-container {
+            //justify-content: flex-end;
+            align-items: center;
+            display: flex;
+            grid-area: burger;
+            padding: 10px;
+
+            @include lg {
+                display: none !important;
+            }
+
+            i {
+                cursor: pointer;
+                font-size: rem-calc(30);
+            }
         }
         
+        #nav-container {
+            background-color: $black;
+            display: none;
+            grid-area: nav;
+            padding: 10px;
+
+            @include lg {
+                background-color: $white;
+                display: block !important;
+            }
+        }
     }
 }
