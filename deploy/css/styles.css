@@ -645,47 +645,109 @@ footer {
         #section-3 > div #section-3-container #section-3-content ul li .bottom > div {
           background-color: #F8C832;
           height: 9px; }
+    #section-3 > div #section-3-container #section-3-content ul #emotion .yellow-bar {
+      width: 64%; }
+    #section-3 > div #section-3-container #section-3-content ul #learning .yellow-bar {
+      width: 90%; }
+    #section-3 > div #section-3-container #section-3-content ul #math .yellow-bar {
+      width: 95%; }
 
+/* =============
+    Section-4
+============= */
+@media (min-width: 1200px) {
+  #section-4 {
+    display: grid;
+    grid-template-areas: ". section-4 .";
+    grid-template-columns: auto 1200px auto; } }
+
+#section-4 > div {
+  background-image: url("../img/section-4/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 420px; }
+  @media (min-width: 768px) {
+    #section-4 > div {
+      background-position-x: -320px;
+      height: 770px; } }
+  @media (min-width: 992px) {
+    #section-4 > div {
+      background-position-x: 0px;
+      height: 638px; } }
+  @media (min-width: 1200px) {
+    #section-4 > div {
+      grid-area: section-4; } }
 /* =============
     Section-5
 ============= */
 #section-5 {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-5 ."; }
+  grid-template-areas: ". section-5 .";
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    #section-5 {
+      padding: 54px 0; } }
+  @media (min-width: 992px) {
+    #section-5 {
+      padding: 100px 0; } }
   @media (min-width: 1200px) {
     #section-5 {
       grid-template-columns: auto 1200px auto; } }
   #section-5 ul {
-    grid-area: section-5;
     display: grid;
-    grid-gap: 20px; }
+    grid-area: section-5;
+    grid-gap: 20px;
+    grid-template-areas: "gallery-7" "gallery-1" "gallery-1" "gallery-6" "gallery-3";
+    grid-template-rows: repeat(5, 235px); }
     @media (min-width: 768px) {
       #section-5 ul {
+        grid-template-areas: "gallery-1 gallery-3" "gallery-1 gallery-7" "gallery-5 gallery-6";
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "gallery-1 gallery-2" "gallery-1 gallery-7" "gallery-3 gallery-6"; } }
+        grid-template-rows: repeat(3, 277px); } }
     @media (min-width: 992px) {
       #section-5 ul {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: "gallery-1 gallery-5 gallery-2" "gallery-1 gallery-7 gallery-4" "gallery-6 gallery-3 gallery-4"; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-1 {
-        grid-area: gallery-1; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-2 {
-        grid-area: gallery-2; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-3 {
-        grid-area: gallery-3; } }
-    @media (min-width: 992px) {
-      #section-5 ul #gallery-4 {
-        grid-area: gallery-4; } }
-    @media (min-width: 992px) {
-      #section-5 ul #gallery-5 {
-        grid-area: gallery-5; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-6 {
-        grid-area: gallery-6; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-7 {
-        grid-area: gallery-7; } }
+        grid-template-areas: "gallery-1 gallery-5 gallery-2" "gallery-1 gallery-7 gallery-4" "gallery-6 gallery-3 gallery-4";
+        grid-template-columns: repeat(3, 1fr); } }
+    #section-5 ul li {
+      background-position: center;
+      background-size: cover; }
+    #section-5 ul #gallery-1 {
+      background-image: url("../img/section-5/gallery-1.jpg");
+      grid-area: gallery-1; }
+    #section-5 ul #gallery-2 {
+      background-image: url("../img/section-5/gallery-2.jpg"); }
+      @media (min-width: 992px) {
+        #section-5 ul #gallery-2 {
+          grid-area: gallery-2; } }
+    #section-5 ul #gallery-3 {
+      background-image: url("../img/section-5/gallery-3.jpg");
+      background-position: center top;
+      grid-area: gallery-3; }
+    #section-5 ul #gallery-4 {
+      background-image: url("../img/section-5/gallery-4.jpg"); }
+      @media (min-width: 992px) {
+        #section-5 ul #gallery-4 {
+          grid-area: gallery-4; } }
+    #section-5 ul #gallery-5 {
+      background-image: url("../img/section-5/gallery-5.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-5 {
+          grid-area: gallery-5; } }
+    #section-5 ul #gallery-6 {
+      background-image: url("../img/section-5/gallery-6.jpg");
+      grid-area: gallery-6; }
+    #section-5 ul #gallery-7 {
+      align-items: center;
+      color: #F8C832;
+      display: flex;
+      font-family: 'Pacifico', cursive;
+      grid-area: gallery-7;
+      justify-content: center; }
+      #section-5 ul #gallery-7 h1 {
+        font-size: 2.6875rem;
+        font-weight: 400; }
+        @media (min-width: 768px) {
+          #section-5 ul #gallery-7 h1 {
+            font-size: 2.875rem; } }
